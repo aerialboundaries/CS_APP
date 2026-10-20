@@ -1,0 +1,37 @@
+BasedOnStyle: LLVM
+Language: Cpp
+
+# インデント幅（2スペース）
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+
+
+# 画面幅制限
+ColumnLimit: 80
+
+# 中括弧の配置（カスタム設定で K&R / KN本 スタイルを再現）
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true          # 関数定義では改行する
+  AfterControlStatement: Never # if / for / while では改行しない
+  AfterEnum: false
+  AfterStruct: false
+  AfterUnion: false
+
+# 制御構文の括弧の前にスペースを入れる (例: if (cond))
+SpaceBeforeParens: ControlStatements
+
+# ポインタの * を右寄せ (例: char *city)
+PointerAlignment: Right
+
+# C言語形式の構造体・配列初期化リストスタイル
+Cpp11BracedListStyle: false
+
+
+# ヘッダーインクルードの整列
+SortIncludes: CaseSensitive
+
+# コメントや代入演算子の過剰な空白揃えを無効化
+AlignConsecutiveAssignments: None
+AlignConsecutiveDeclarations: None
